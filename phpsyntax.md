@@ -227,12 +227,14 @@ the syntax is as followed, default for case-insensitive is false<br>
     //since if was false it goes on to elseif, if elseif is false it resorts to else
     
     ```
+    ```
 
 #PHP Functions<br>
 
   PHP comes with over 1000 built in functions, some weve already talked 
   about include vardump(), echo(), strlen()<br>
   You can also create you own functions and make them do whatever you want<br>
+  
   ```
   function sumNumbers($num1, $num2){  //$num1 and $num2 are parameters
   $sum = $num1 + $num2;
