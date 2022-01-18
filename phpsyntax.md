@@ -1,56 +1,56 @@
 #PHP syntax guide
 
 --Comments:
-PHP can comment out code a few different wanys, either using 
-// double forward slash comments our a line
-// # hashtag comments out a line as well
-/*
-slash start will comment out multiple lines
-*/
+PHP can comment out code a few different wanys, either using:
+// double forward slash comments our a line<br>
+// # hashtag comments out a line as well<br>
+/*<br>
+slash start will comment out multiple lines<br>
+*/<br>
 
-#PHP Variables:
+#PHP Variables:<br>
 Variable declaration begins with a $ and like all other PHP the 
-line must end in a ;
-  $varInt = 54;
-  $varStr = "hello world";
-  $_vartest = "hi;
-vars can only contain a-z, A-Z, 0-9 and _, numbers letters and underscores
-Vars are case sensitive, $var1 is different than $VAR1
+line must end in a ;<br>
+  $varInt = 54;<br>
+  $varStr = "hello world";<br>
+  $_vartest = "hi;<br>
+vars can only contain a-z, A-Z, 0-9 and _, numbers letters and underscores<br>
+Vars are case sensitive, $var1 is different than $VAR1<br>
 
-#PHP Echo / Print:
-Echo and Pring are both functions in PHP to display data on the screen
-echo has no return vaue and print has a return value of 1
-echo can take multiple parameters and print can only take 1
-  echo("echo can" . "have more than". "one parameter<br>");
-  echo($num1 + $num2);
-  print("234");
-  print "Study PHP at " . $txt2 . "<br>";
-  print $x + $y;
+#PHP Echo / Print:<br>
+Echo and Pring are both functions in PHP to display data on the screen<br>
+echo has no return vaue and print has a return value of 1<br>
+echo can take multiple parameters and print can only take 1<br>
+  echo("echo can" . "have more than". "one parameter<br>");<br>
+  echo($num1 + $num2);<br>
+  print("234");<br>
+  print "Study PHP at " . $txt2 . "<br>";<br>
+  print $x + $y;<br>
 
 
-#PHP Data Types:
+#PHP Data Types:<br>
 PHP contains all the data types as other coding languages
- there exists:
- You can use var_dump($var) to check whic type of data the variable has
-   
-   String
+ there exists:<br>
+ You can use var_dump($var) to check whic type of data the variable has<br>
+   ```
+   -String
     $varStr = "hello this is a string";
     
-   Integer
+   -Integer
     $varInt = 54;
     
-   Float (floating point numbers - also called double)
+   -Float (floating point numbers - also called double)
     $varFloat = 11.23;
     
-   Boolean
+   -Boolean
     $varBoolean = true;
     $varBoolean2 = false;
     
-   Array
+   -Array
     $varArray = ["guitar","piano","drums","bass","saxophone"];
     $numbArray = [1,2,3,4,5];
     
-   Object
+   -Object
    -there are two main aspects when creating object:classes and objects
    -a class is a template made for creating objects
    -you can use the __contruct() function to automatically create objects
@@ -69,7 +69,7 @@ PHP contains all the data types as other coding languages
       $madeOf . " and costs " . $cost;
     }
  }
-  
+  ```
 $myHouse = new House("blue", "bricks", "1million");
 echo $myHouse -> message();
 
