@@ -212,6 +212,7 @@ the syntax is as followed, default for case-insensitive is false<br>
   if statement - executes some code if one condition is true<br>
   if...else statement - executes some code if a condition is true and another code if that condition is false<br>
   if...elseif...else statement - executes different codes for more than two conditions<br>
+  
   ```
     $myNum = 5;
     if ($myNum > 6){
@@ -224,6 +225,7 @@ the syntax is as followed, default for case-insensitive is false<br>
       echo "finally"
     }
     //since if was false it goes on to elseif, if elseif is false it resorts to else
+    
     ```
 
 #PHP Functions<br>
@@ -239,11 +241,13 @@ the syntax is as followed, default for case-insensitive is false<br>
     //to make the function run you must then call the function
     
   sumNumbers(3,5); //function will return 8
+  
   ```
   
 #PHP Arrays<br>
   arrays are single variables holding multiple pieces of data<br>
   they can be created a couple of ways<br>
+  
   ```
  -Indexed arrays index each value in the order they are entered - 0,1,2,3<br>
   $myArray = [1,2,3,4];<br>
@@ -278,20 +282,24 @@ the syntax is as followed, default for case-insensitive is false<br>
       echo ($myArray); //prints the sorted array
 
   ```
+  
 #PHP Loop<br>
 PHP can run loops like other scripting languages<br>
     while - loops through a block of code as long as the specified condition is true <br>
     
      ```
+     
      $x = 1;
       while($x <= 5) {
         echo "The number is: $x <br>";
         $x++;
       } 
+      
       ```
     do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true<br>
     
     ```
+    
       $x = 1;
       do {
         echo "The number is: $x <br>";
@@ -301,6 +309,7 @@ PHP can run loops like other scripting languages<br>
     for - loops through a block of code a specified number of times<br>
     
      ```
+     
      for (init counter; test counter; increment counter) {
       code to be executed for each iteration;
       } 
@@ -308,9 +317,12 @@ PHP can run loops like other scripting languages<br>
     for ($x = 0; $x <= 10; $x++) {
       echo "The number is: $x <br>";
     } 
+    
     ```
+    
     foreach - loops through a block of code for each element in an array<br>
       The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.<br>
+      
       
       ```
       $colors = array("red", "green", "blue", "yellow"); 
