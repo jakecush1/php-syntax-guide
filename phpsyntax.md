@@ -1,7 +1,8 @@
 #PHP syntax guide
 
 --Comments:
-PHP can comment out code a few different wanys, either using:```
+PHP can comment out code a few different wanys, either using:
+
 // double forward slash comments our a line<br>
 // # hashtag comments out a line as well<br>
 /*<br>
@@ -10,7 +11,8 @@ slash start will comment out multiple lines<br>
 ```
 #PHP Variables:<br>
 Variable declaration begins with a $ and like all other PHP the 
-line must end in a ;<br>```
+line must end in a ;<br>
+```
   $varInt = 54;<br>
   $varStr = "hello world";<br>
   $_vartest = "hi;<br>
@@ -20,7 +22,8 @@ Vars are case sensitive, $var1 is different than $VAR1<br>
 #PHP Echo / Print:<br>
 Echo and Pring are both functions in PHP to display data on the screen<br>
 echo has no return vaue and print has a return value of 1<br>
-echo can take multiple parameters and print can only take 1<br>```
+echo can take multiple parameters and print can only take 1<br>
+```
   echo("echo can" . "have more than". "one parameter<br>");<br>
   echo($num1 + $num2);<br>
   print("234");<br>
