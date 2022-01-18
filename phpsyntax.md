@@ -224,10 +224,8 @@ the syntax is as followed, default for case-insensitive is false<br>
     else{
       echo "finally"
     }
-    //since if was false it goes on to elseif, if elseif is false it resorts to else
-    
-    ```
-    ```
+
+  ```
 
 #PHP Functions<br>
 
