@@ -76,15 +76,16 @@ PHP contains all the data types as other coding languages
 $myHouse = new House("blue", "bricks", "1million");
 echo $myHouse -> message();
 ```
-#NULL
-   Null means that the variable has no data type assigned to it```
-   $nullVar = NULL;
-   ```
-#Resource
+#NULL<br>
+   Null means that the variable has no data type assigned to it<br>
+   $nullVar = NULL;<br>
+  
+#Resource<br>
     
-#PHP Strings
+#PHP Strings<br>
 Strings have multiple built in functions to manipulate or check different 
-parts of strings```
+parts of strings
+```
 $myStr = "hello there everyone, this is a string";
 
 strlen() counts the length of the string
@@ -101,9 +102,10 @@ strpos($myStr, everyone) //outputs 12 because the word everyone has 12 character
 str_replace() - Replace Text Within a String  
 str_replace("hello", "goodbye", "hello world") //outputs goodbye world
 ```
-#PHP Numbers
+#PHP Numbers<br>
 There exits a few different types of numbers in PHP
 asides fro using var_dump() you can check number types w various resources(functions)
+
 ```
 -integers -> int
   $x = 5985;
@@ -127,20 +129,24 @@ asides fro using var_dump() you can check number types w various resources(funct
   $x = "5985";
   var_dump(is_numeric($x)); //returns true
   ```
-PHP Casting Strings and Floats to Integers
-  it can be useful to be able to change floats or strings to to ints
-  we can do this using (int)```
+PHP Casting Strings and Floats to Integers<br>
+  it can be useful to be able to change floats or strings to to ints<br>
+  we can do this using (int)<br>
+  
+  ```
   $float = 11.34;
   $string = "2321";
   echo (int)$float; //returns 11
   echo (int)$string; //returns 2321
 ```
 
-#PHP Constants
+#PHP Constants<br>
 Constants are like variables, in that they hold a value, different
-in that they cannot be changed, and are automatically global across the entire script
+in that they cannot be changed, and are automatically global across the entire script<br>
 A valid constant name starts with a letter or underscore (no $ sign before the constant name).
-the syntax is as followed, default for case-insensitive is false```
+the syntax is as followed, default for case-insensitive is false<br>
+
+```
    -define(name, value, case-insensitive)
    
    define("name", "jake");
@@ -150,8 +156,9 @@ the syntax is as followed, default for case-insensitive is false```
    echo ADREss; //returns 724 hoover
   
   ```
-#PHP Operators
-  PHP divide the following operators into groups 
+#PHP Operators<br>
+  PHP divide the following operators into groups <br>
+  
   ```
     -Arithmetic operators
       addition +
@@ -201,10 +208,10 @@ the syntax is as followed, default for case-insensitive is false```
       != //true if not equal
       !== // true if not identical      
 ```
-#PHP If & Else & Elseif
-  if statement - executes some code if one condition is true
-  if...else statement - executes some code if a condition is true and another code if that condition is false
-  if...elseif...else statement - executes different codes for more than two conditions
+#PHP If & Else & Elseif<br>
+  if statement - executes some code if one condition is true<br>
+  if...else statement - executes some code if a condition is true and another code if that condition is false<br>
+  if...elseif...else statement - executes different codes for more than two conditions<br>
   ```
     $myNum = 5;
     if ($myNum > 6){
@@ -219,11 +226,11 @@ the syntax is as followed, default for case-insensitive is false```
     //since if was false it goes on to elseif, if elseif is false it resorts to else
     ```
 
-#PHP Functions
+#PHP Functions<br>
 
   PHP comes with over 1000 built in functions, some weve already talked 
-  about include vardump(), echo(), strlen()
-  You can also create you own functions and make them do whatever you want
+  about include vardump(), echo(), strlen()<br>
+  You can also create you own functions and make them do whatever you want<br>
   ```
   function sumNumbers($num1, $num2){  //$num1 and $num2 are parameters
   $sum = $num1 + $num2;
@@ -235,7 +242,7 @@ the syntax is as followed, default for case-insensitive is false```
   ```
   
 #PHP Arrays<br>
-  arrays are single variables holding multiple pieces of data
+  arrays are single variables holding multiple pieces of data<br>
   they can be created a couple of ways<br>
   ```
  -Indexed arrays index each value in the order they are entered - 0,1,2,3<br>
@@ -271,9 +278,10 @@ the syntax is as followed, default for case-insensitive is false```
       echo ($myArray); //prints the sorted array
 
   ```
-#PHP Loop
-PHP can run loops like other scripting languages
-    while - loops through a block of code as long as the specified condition is true 
+#PHP Loop<br>
+PHP can run loops like other scripting languages<br>
+    while - loops through a block of code as long as the specified condition is true <br>
+    
      ```
      $x = 1;
       while($x <= 5) {
@@ -281,7 +289,8 @@ PHP can run loops like other scripting languages
         $x++;
       } 
       ```
-    do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true
+    do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true<br>
+    
     ```
       $x = 1;
       do {
@@ -289,7 +298,8 @@ PHP can run loops like other scripting languages
         $x++;
       } while ($x <= 5);```
       
-    for - loops through a block of code a specified number of times
+    for - loops through a block of code a specified number of times<br>
+    
      ```
      for (init counter; test counter; increment counter) {
       code to be executed for each iteration;
@@ -299,8 +309,9 @@ PHP can run loops like other scripting languages
       echo "The number is: $x <br>";
     } 
     ```
-    foreach - loops through a block of code for each element in an array
-      The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.
+    foreach - loops through a block of code for each element in an array<br>
+      The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.<br>
+      
       ```
       $colors = array("red", "green", "blue", "yellow"); 
       foreach ($colors as $value) {
