@@ -295,10 +295,10 @@ PHP can run loops like other scripting languages<br>
         $x++;
       } 
       
-      ```
+     
     do...while - loops through a block of code once, and then repeats the loop as long as the specified condition is true<br>
     
-    ```
+    
     
       $x = 1;
       do {
@@ -308,7 +308,7 @@ PHP can run loops like other scripting languages<br>
       
     for - loops through a block of code a specified number of times<br>
     
-     ```
+     
      
      for (init counter; test counter; increment counter) {
       code to be executed for each iteration;
@@ -318,13 +318,13 @@ PHP can run loops like other scripting languages<br>
       echo "The number is: $x <br>";
     } 
     
-    ```
+    
     
     foreach - loops through a block of code for each element in an array<br>
       The foreach loop works only on arrays, and is used to loop through each key/value pair in an array.<br>
       
       
-      ```
+      
       $colors = array("red", "green", "blue", "yellow"); 
       foreach ($colors as $value) {
         echo "$value <br>";
