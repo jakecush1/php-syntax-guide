@@ -1,5 +1,5 @@
 #PHP syntax guide
-
+```
 --Comments:
 PHP can comment out code a few different wanys, either using:
 
@@ -204,7 +204,8 @@ the syntax is as followed, default for case-insensitive is false```
 #PHP If & Else & Elseif
   if statement - executes some code if one condition is true
   if...else statement - executes some code if a condition is true and another code if that condition is false
-  if...elseif...else statement - executes different codes for more than two conditions```
+  if...elseif...else statement - executes different codes for more than two conditions
+  ```
     $myNum = 5;
     if ($myNum > 6){
       echo "cool";
