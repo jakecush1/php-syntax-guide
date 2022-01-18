@@ -1,14 +1,14 @@
-//PHP syntax guide
+#PHP syntax guide
 
 --Comments:
 PHP can comment out code a few different wanys, either using 
 // double forward slash comments our a line
-# hashtag comments out a line as well
+// # hashtag comments out a line as well
 /*
 slash start will comment out multiple lines
 */
 
---PHP Variables:
+#PHP Variables:
 Variable declaration begins with a $ and like all other PHP the 
 line must end in a ;
   $varInt = 54;
@@ -17,18 +17,18 @@ line must end in a ;
 vars can only contain a-z, A-Z, 0-9 and _, numbers letters and underscores
 Vars are case sensitive, $var1 is different than $VAR1
 
---PHP Echo / Print:
+#PHP Echo / Print:
 Echo and Pring are both functions in PHP to display data on the screen
 echo has no return vaue and print has a return value of 1
 echo can take multiple parameters and print can only take 1
   echo("echo can" . "have more than". "one parameter<br>");
   echo($num1 + $num2);
-  print("<h2>234</h2>");
+  print("234");
   print "Study PHP at " . $txt2 . "<br>";
   print $x + $y;
 
 
---PHP Data Types:
+#PHP Data Types:
 PHP contains all the data types as other coding languages
  there exists:
  You can use var_dump($var) to check whic type of data the variable has
@@ -73,13 +73,13 @@ PHP contains all the data types as other coding languages
 $myHouse = new House("blue", "bricks", "1million");
 echo $myHouse -> message();
 
---NULL
+#NULL
    Null means that the variable has no data type assigned to it
    $nullVar = NULL;
    
---Resource
+#Resource
     
---PHP Strings
+#PHP Strings
 Strings have multiple built in functions to manipulate or check different 
 parts of strings
 $myStr = "hello there everyone, this is a string";
@@ -98,8 +98,7 @@ strpos($myStr, everyone) //outputs 12 because the word everyone has 12 character
 str_replace() - Replace Text Within a String  
 str_replace("hello", "goodbye", "hello world") //outputs goodbye world
 
-
---PHP Numbers
+#PHP Numbers
 There exits a few different types of numbers in PHP
 asides fro using var_dump() you can check number types w various resources(functions)
 
@@ -134,7 +133,7 @@ PHP Casting Strings and Floats to Integers
   echo (int)$string; //returns 2321
 
 
---PHP Constants
+#PHP Constants
 Constants are like variables, in that they hold a value, different
 in that they cannot be changed, and are automatically global across the entire script
 A valid constant name starts with a letter or underscore (no $ sign before the constant name).
@@ -148,8 +147,9 @@ the syntax is as followed, default for case-insensitive is false
    echo ADREss; //returns 724 hoover
   
   
---PHP Operators
+#PHP Operators
   PHP divide the following operators into groups 
+  
     -Arithmetic operators
       addition +
       subtration -
@@ -198,7 +198,7 @@ the syntax is as followed, default for case-insensitive is false
       != //true if not equal
       !== // true if not identical      
 
---PHP If & Else & Elseif
+#PHP If & Else & Elseif
   if statement - executes some code if one condition is true
   if...else statement - executes some code if a condition is true and another code if that condition is false
   if...elseif...else statement - executes different codes for more than two conditions
@@ -215,7 +215,8 @@ the syntax is as followed, default for case-insensitive is false
     //since if was false it goes on to elseif, if elseif is false it resorts to else
     
 
---PHP Functions
+#PHP Functions
+
   PHP comes with over 1000 built in functions, some weve already talked 
   about include vardump(), echo(), strlen()
   You can also create you own functions and make them do whatever you want
@@ -229,15 +230,16 @@ the syntax is as followed, default for case-insensitive is false
   sumNumbers(3,5); //function will return 8
   
   
---PHP Arrays
+#PHP Arrays<br>
   arrays are single variables holding multiple pieces of data
-  they can be created a couple of ways
- -Indexed arrays index each value in the order they are entered - 0,1,2,3
-  $myArray = [1,2,3,4];
-  $newArray = array("hello",14,"buddy");
-  var_dump($myArray);
-  var_dump($newArray);
-  echo $mArray[0]; //returns 1
+  they can be created a couple of ways<br>
+  
+ -Indexed arrays index each value in the order they are entered - 0,1,2,3<br>
+  $myArray = [1,2,3,4];<br>
+  $newArray = array("hello",14,"buddy");<br>
+  var_dump($myArray);<br>
+  var_dump($newArray);<br>
+  echo $mArray[0]; //returns 1<br>
   
  -Associative Array are array with indexs as other custom names
   $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
@@ -265,7 +267,7 @@ the syntax is as followed, default for case-insensitive is false
       echo ($myArray); //prints the sorted array
 
   
---PHP Loop
+#PHP Loop
 PHP can run loops like other scripting languages
     while - loops through a block of code as long as the specified condition is true
       $x = 1;
